@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adverts",
+  "info": {
+    "singularName": "advert",
+    "pluralName": "adverts",
+    "displayName": "advert",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "rooms": {
+      "type": "integer",
+      "required": true
+    },
+    "flour": {
+      "type": "integer",
+      "required": true
+    },
+    "total_area": {
+      "type": "float",
+      "required": true
+    },
+    "living_area": {
+      "type": "float",
+      "required": true
+    },
+    "heating_type": {
+      "type": "enumeration",
+      "enum": [
+        "Централізоване",
+        "Автономне",
+        "Індивідуальне"
+      ],
+      "required": true
+    },
+    "building_technology_type": {
+      "type": "enumeration",
+      "enum": [
+        "цегляні",
+        "монолітні",
+        "панельні"
+      ],
+      "required": true
+    },
+    "type_of_finish_apartment": {
+      "type": "enumeration",
+      "enum": [
+        "від будівельників",
+        "сучасний",
+        "звичайний"
+      ],
+      "required": true
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "about": {
+      "type": "richtext",
+      "required": true
+    },
+    "street_address": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
