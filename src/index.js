@@ -17,4 +17,30 @@ module.exports = {
    * run jobs, or perform some special logic.
    */
   bootstrap(/*{ strapi }*/) {},
+  // register({ strapi }) {
+  //   const extensionService = strapi.plugin('graphql').service('extension');
+
+  //   extensionService.use({
+  //     resolversConfig: {
+  //       'Query.categories': {
+  //         /**
+  //          * Querying the Categories content-type
+  //          * bypasses the authorization system.
+  //          */ 
+  //         auth: false
+  //       },
+  //       'Query.restaurants': {
+  //         /**
+  //          * Querying the Restaurants content-type
+  //          * requires the find permission
+  //          * on the 'Address' content-type
+  //          * of the 'Address' API
+  //          */
+  //         auth: {
+  //           scope: ['api::address.address.find']
+  //         }
+  //       },
+  //     }
+  //   })
+  // },
 };
