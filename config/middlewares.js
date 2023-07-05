@@ -20,6 +20,7 @@ module.exports = [
   name: "strapi::public",
   config: {
     defer: true,
+    // path: "./public/income-agency",
   },
 },
 ];
