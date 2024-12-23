@@ -4,8 +4,17 @@ module.exports = [
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
-        directives: { "script-src": ["'self'", "'unsafe-inline'", "maps.googleapis.com"],  "img-src":["'self'", "data:", "maps.gstatic.com", "maps.googleapis.com"], "connect-src":["'self'", "http:"] },
-        // "connect-src":["'self'", "http:"] 
+        directives: {
+          "script-src": ["'self'", "'unsafe-inline'", "maps.googleapis.com"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "maps.gstatic.com",
+            "maps.googleapis.com",
+          ],
+          "connect-src": ["'self'", "http:"],
+        },
+        // "connect-src":["'self'", "http:"]
       },
     },
   },
@@ -17,10 +26,10 @@ module.exports = [
   "strapi::session",
   "strapi::favicon",
   {
-  name: "strapi::public",
-  config: {
-    defer: true,
-    // path: "./public/income-agency",
+    name: "strapi::public",
+    config: {
+      defer: true,
+      // path: "./public/income-agency",
+    },
   },
-},
 ];
